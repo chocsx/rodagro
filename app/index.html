@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rodagro</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <h1 class="hide">Rodagro</h1>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8">
+            <img src="images/logo.png" alt="" class="img-responsive">
+          </div>
+          <div class="col-xs-4">
+            <div class="hamburger">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="banners">
+      <div class="slider">
+        <div style="background-image: url('./images/slide1.png');">
+
+        </div>
+      </div>
+    </main>
+
+    <section class="bemvindo">
+      <div class="container">
+        <p>Somos a Rodagro, especialistas há mais de 10 anos no transporte de maquinários e implementos agrícolas, especialmente colheitadeiras e tratores, para todo o território brasileiro. Seja bem-vindo!</p>
+      </div>
+    </section>
+
+    <section class="servicos">
+      <div class="container">
+        <h2>Nossos Serviços</h2>
+        <ul>
+          <li>
+            <a href="javascript:;" style="background-image: url(./images/transporte-colheitadeira.jpg);">
+              <h3>Transporte <br>de Colhetadeira</h3>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;" style="background-image: url(./images/transporte-tratores.jpg);">
+              <h3>Transporte <br>de Tratores</h3>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;" style="background-image: url(./images/transporte-especiais.jpg);">
+              <h3>Transportes <br>Especiais</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="orcamento">
+      <div class="container">
+        <h2>Peça um Orçamento</h2>
+        <p>Solicite o seu orçamento preenchendo os campos do formulário abaixo e aguarde. Responderemos sua solicitação o mais breve possível.</p>
+        <form action="post-orcamento" method="POST" name="formOrcamento">
+          <input type="text" name="nome" placeholder="Nome Completo">
+          <input type="text" name="telefone" placeholder="Telefone">
+          <input type="email" name="email" placeholder="E-mail">
+          <input type="text" name="empresa" placeholder="Empresa">
+          <input type="text" name="servico" placeholder="Produto ou Servico">
+          <textarea name="mensagem" style="resize: none;" rows="5" placeholder="Digite sua mensagem"></textarea>
+          <input type="submit" class="btn" value="Pedir Orçamento">
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="col-md-4 col-xs-12">
+          <img src="images/logo-footer.png" alt="" class="logo-footer">
+          <br>
+          <p>Estrada Major Mauricio Souza Carpes, s/n. <br> Montenegro/RS - CEP 95780-970</p>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <ul class="contato-lista">
+            <li><i class="fa fa-phone"></i> 51 4042-3003</li>
+            <li><i class="fa fa-whatsapp"></i> 51 99193-7389</li>
+            <li><i class="fa fa-envelope"></i> contato@rodagro.com.br</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <ul class="social-media">
+            <li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="javascript:;"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="assinatura">
+      <p>Rodagro Transportes e Logística LTDA © 2017 <br>Todos os direitos reservados.</p>
+    </div>
+    <nav class="menu">
+        <ul class="clearfix">
+            <li><a href="tel:+"><i class="fa fa-phone fa-2x"></i></a></li>
+            <li><a href="tel:+"><i class="fa fa-whatsapp fa-2x"></i></a></li>
+            <li><a href="mailto:email@email.com.br"><i class="fa fa-envelope fa-2x"></i></a></li>
+        </ul>
+    </nav>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

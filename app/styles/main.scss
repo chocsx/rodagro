@@ -1,0 +1,191 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
+// endbower
+
+/* Space out content a bit */
+body {
+  background-color: #f6f6f6;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  color: #808285;
+  padding-bottom: 53px;
+}
+h1,h2,h3,h4{
+  margin: 0;
+  padding: 0;
+}
+h2{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3b3b3c;
+  text-align: center;
+}
+p{
+
+  text-align: center;
+  margin: 0;
+
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+/* Custom page header */
+.hamburger{
+  float: right;
+}
+.header {
+  background-color: #e3e4e8;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+  padding: 24px 0;
+}
+.slider{
+  height: 305px;
+  div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 305px;
+    background-position: center center;
+  }
+}
+.bemvindo{
+  p{
+    padding: 30px;
+  }
+}
+.servicos{
+  padding: 60px 0;
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      margin: 15px 0;
+      a{
+        display: block;
+        height: 80px;
+        background-position: center center;
+        color: #FFF;
+
+        h3{
+          font-size: 16px;
+          text-transform: uppercase;
+          padding: 15px 20px;
+          line-height: 24px;
+          font-weight: bold;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            right: 15px;
+            top: 30px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid white;
+          }
+        }
+      }
+    }
+  }
+}
+.orcamento{
+  form{
+    padding: 20px 0;
+    color: #c3c5ca;
+    input, textarea{
+      display: block;
+      width: 100%;
+      margin: 15px 0;
+      padding: 5px 10px;
+      border: 1px solid #d8dade;
+    }
+    .btn{
+      background-color: #fdb913;
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 10px 0;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+  }
+}
+footer{
+  padding: 60px 0;
+  .logo-footer{
+    display: block;
+    margin: 0 auto;
+  }
+  ul{
+    list-style-type: none;
+    margin-top: 30px;
+  }
+  .contato-lista{
+    i{
+      color: #3a3a3b;
+    }
+  }
+  .social-media{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li{
+      a{
+        background-color: #3a3a3b;
+        display: block;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        padding: 5px;
+        color: #FFF;
+      }
+    }
+  }
+}
+.assinatura{
+  padding: 30px 0 15px;
+  background-color: #3a3a3b;
+  color: #FFF;
+  p{
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+.menu {
+    background-color: #3b3b3c;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      li {
+          border-right: 1px solid #000;
+          -webkit-box-flex: 1;
+          -ms-flex: 1 1 33.33333%;
+          flex: 1 1 33.33333%;
+          a{
+            color: #fcb813;
+            display: block;
+            padding: 10px 0;
+            text-align: center;
+          }
+      }
+    }
+}
