@@ -35,6 +35,9 @@ p{
 .hamburger{
   float: right;
 }
+.rowspace{
+  margin-top: 2em;
+}
 .menu-topo{
   list-style: none;
   display: none;
@@ -116,6 +119,15 @@ p{
   }
 }
 .orcamento{
+  h2{
+    padding: 1em;
+  }
+  .contato-lista{
+    list-style: none;
+    i{
+      color: #fcb813;
+    }
+  }
   form{
     padding: 20px 0;
     color: #c3c5ca;
