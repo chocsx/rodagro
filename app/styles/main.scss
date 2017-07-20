@@ -35,6 +35,26 @@ p{
 .hamburger{
   float: right;
 }
+.menu-topo{
+  list-style: none;
+  display: none;
+  transition: all .4s linear;
+  &.open {
+    padding: 0;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column
+  }
+  a{
+    text-align: center;
+    flex: 1 1 100%;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #666;
+    padding: 16px;
+  }
+}
 .header {
   background-color: #e3e4e8;
   border-bottom: 1px solid #e5e5e5;
