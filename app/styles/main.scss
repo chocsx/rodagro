@@ -138,6 +138,11 @@ p{
       padding: 5px 10px;
       border: 1px solid #d8dade;
     }
+    h3{
+      color: #000;
+      text-align: center;
+      text-transform: uppercase;
+    }
     .btn{
       background-color: #fdb913;
       color: #FFF;
@@ -181,6 +186,17 @@ footer{
         color: #FFF;
       }
     }
+  }
+}
+.parceiros-lista{
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  @media (max-width: 320px){
+    flex-direction: column;
+    align-self: center;
   }
 }
 .assinatura{
