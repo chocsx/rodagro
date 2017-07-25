@@ -49,13 +49,15 @@ p{
     flex-direction: column
   }
   a{
-    text-align: center;
-    flex: 1 1 100%;
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-size: 16px;
+    /*border: 1px solid red;*/
+    height: 40px;
     color: #666;
-    padding: 16px;
+    flex: 1 1 100%;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 .header {
@@ -204,8 +206,9 @@ footer{
   background-color: #3a3a3b;
   color: #FFF;
   p{
-    max-width: 320px;
+    max-width: 340px;
     margin: 0 auto;
+    font-size: 12px;
   }
 }
 .menu {
