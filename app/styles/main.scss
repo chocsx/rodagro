@@ -1,4 +1,5 @@
 $icon-font-path: '../fonts/';
+$laranja: #fdb913;
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
@@ -10,7 +11,9 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   color: #808285;
-  padding-bottom: 53px;
+  @media (max-width: 768px){
+    padding-bottom: 53px;
+  }
 }
 h1,h2,h3,h4{
   margin: 0;
@@ -40,8 +43,12 @@ p{
 }
 .menu-topo{
   list-style: none;
-  display: none;
   transition: all .4s linear;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  justify-content: space-between;
   &.open {
     padding: 0;
     display: flex;
@@ -49,15 +56,25 @@ p{
     flex-direction: column
   }
   a{
-    /*border: 1px solid red;*/
-    height: 40px;
     color: #666;
-    flex: 1 1 100%;
     font-size: 16px;
     margin: 0;
-    padding: 0;
+    padding: 14px 0;
     text-align: center;
     text-transform: uppercase;
+    @media(max-width: 768px){
+      flex: 1 1 100%;
+      height: 40px;
+    }
+    &.actv{
+      font-weight: bold;
+    }
+    &.destaque{
+      background-color: $laranja;
+      color: #FFF;
+      padding: 14px;
+      font-weight: bold;
+    }
   }
 }
 .header {
@@ -67,18 +84,41 @@ p{
   padding: 24px 0;
 }
 .slider{
-  height: 305px;
   div{
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 305px;
     background-position: center center;
+    height: 305px;
+    @media (min-width: 768px){
+      height: 500px;
+    }
+    .content{
+      background-color: rgba(253,185,19,.8);
+      max-width: 455px;
+      left: 60%;
+      display: flex;
+      p{
+        margin: 120px 30px;
+        font-size: 45px;
+        color: #FFF;
+        max-width: 320px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
   }
 }
 .bemvindo{
+  padding: 60px 0 0 ;
   p{
     padding: 30px;
   }
+}
+.center{
+  display: block;
+  margin: 0 auto;
 }
 .servicos{
   padding: 60px 0;
@@ -89,10 +129,13 @@ p{
     li{
       margin: 15px 0;
       a{
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-color: $laranja;
+        color: #FFF;
         display: block;
         height: 80px;
-        background-position: center center;
-        color: #FFF;
+
 
         h3{
           font-size: 16px;
@@ -136,7 +179,6 @@ p{
     input, textarea{
       display: block;
       width: 100%;
-      margin: 15px 0;
       padding: 5px 10px;
       border: 1px solid #d8dade;
     }
@@ -213,11 +255,17 @@ footer{
 }
 .menu {
     background-color: #3b3b3c;
-    bottom: 0;
-    left: 0;
     position: fixed;
-    width: 100%;
     z-index: 100;
+    @media screen and (max-width: 768px){
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    @media (min-width: 769px) {
+      right: 0;
+      top: 25%
+    }
     ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -226,15 +274,21 @@ footer{
       margin: 0;
       padding: 0;
       width: 100%;
+      @media (min-width: 769px) {
+        display: block;
+      }
       li {
           border-right: 1px solid #000;
-          -webkit-box-flex: 1;
-          -ms-flex: 1 1 33.33333%;
-          flex: 1 1 33.33333%;
+          padding: 10px 0;
+          @media (max-width: 768px){
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 33.33333%;
+            flex: 1 1 33.33333%;
+          }
           a{
             color: #fcb813;
             display: block;
-            padding: 10px 0;
+            padding: 10px 20px;
             text-align: center;
           }
       }

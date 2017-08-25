@@ -44,11 +44,11 @@
           </div>
           <div class="col-lg-8">
             <nav class="menu-topo">
-                <a href="index.html">home</a>
+                <a href="index.html" class="actv">início</a>
                 <a href="quem-somos.html">quem somos</a>
                 <a href="servicos.html">serviços</a>
-                <a href="orcamento.html">orçamento</a>
                 <a href="contato.html">contato</a>
+                <a href="orcamento.html" class="destaque">orçamento</a>
             </nav>
           </div>
 
@@ -58,8 +58,15 @@
 
     <main class="banners">
       <div class="slider">
-        <div style="background-image: url('./images/banner-home.jpg');">
-
+        <div style="background-image: url('./images/banner-home-desk.jpg');">
+          <div class="content">
+            <p>
+              pensou
+              transporte?
+              pensou
+              rodagro.
+            </p>
+          </div>
         </div>
       </div>
     </main>
@@ -67,7 +74,7 @@
     <section class="bemvindo">
       <div class="container">
         <p>
-        Somos a Rodagro, especialistas há mais de 10 anos no transporte de máquinas para construção civil, indústria e agricultura, referência tanto no mercado brasileiro como no mercado internacional. <br>Seja bem-vindo!
+        Somos a Rodagro, especialistas há mais de uma década no transporte de máquinas para construção civil, indústria e agricultura, referência tanto no mercado brasileiro como no mercado internacional. Seja bem-vindo!
         </p>
       </div>
     </section>
@@ -107,16 +114,36 @@
       <div class="container">
         <h2>Peça um Orçamento</h2>
         <p>
-          Solicite o seu orçamento, preenchendo os campos do formulário abaixo e aguarde. Responderemos a sua solicitação o mais breve possível.
+          Solicite o seu orçamento, preenchendo os campos do formulário abaixo e aguarde.
+          Responderemos a sua solicitação o mais breve possível.
         </p>
         <form action="post-orcamento" method="POST" name="formOrcamento">
-          <input type="text" name="nome" placeholder="Nome da Empresa">
-          <input type="text" name="telefone" placeholder="Fone">
-          <input type="email" name="email" placeholder="E-mail">
-          <input type="text" name="empresa" placeholder="Contato">
-          <input type="text" name="servico" placeholder="Serviço Desejado.">
-          <textarea name="mensagem" style="resize: none;" rows="5" placeholder="Digite sua mensagem"></textarea>
-          <input type="submit" class="btn" value="Pedir Orçamento">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <input type="text" name="nome" placeholder="Nome Completo">
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <input type="text" name="telefone" placeholder="Telefone">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <input type="email" name="email" placeholder="E-mail">
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <input type="email" name="email" placeholder="E-mail">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea name="mensagem" style="resize: none;" rows="5" placeholder="Digite sua mensagem"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn" value="Pedir Orçamento">
+          </div>
         </form>
       </div>
     </section>

@@ -1,0 +1,72 @@
+Arguments: 
+  C:\doubleweb-env\bin\nodejs\node.exe C:\doubleweb-env\bin\yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\chocs\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\chocs\AppData\Roaming\npm;C:\Users\chocs\AppData\Roaming\Composer\vendor\bin;C:\doubleweb-env\bin\mysql\mariadb-10.2.3-win32\bin;C:\doubleweb-env\bin\php\php-7.1.1-Win32-VC14-x86;C:\doubleweb-env\bin\composer;C:\doubleweb-env\bin\apache\httpd-2.4.25-win32-VC14\bin;C:\doubleweb-env\bin\redis\redis-x64-3.2.100;C:\doubleweb-env\bin\memcached\memcached-1.4.5;C:\doubleweb-env\bin\nodejs;C:\doubleweb-env\bin\yarn\bin;C:\doubleweb-env\bin\notepad++;C:\doubleweb-env\bin\telnet;C:\doubleweb-env\bin\ngrok;C:\doubleweb-env\bin\sendmail;C:\doubleweb-env\bin\winscp;C:\doubleweb-env\bin\git\bin;C:\doubleweb-env\bin\git\cmd;C:\doubleweb-env\bin\git\usr\bin;C:\doubleweb-env\bin\git\mingw32\bin;C:\doubleweb-env\bin;C:\doubleweb-env\usr\bin;C:\doubleweb-env\bin\putty;;C:\doubleweb-env\bin\cmder\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\php;C:\laragon\bin\composer;C:\laragon\bin\php\phpunit;C:\laragon\bin\git\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\HashiCorp\Vagrant\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Brackets\command;C:\Ruby23-x64\bin;C:\Users\chocs\AppData\Local\Microsoft\WindowsApps;C:\Users\chocs\AppData\Local\atom\bin;C:\Users\chocs\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\chocs\AppData\Local\Microsoft\WindowsApps;;C:\laragon\bin\git\usr\bin;C:\laragon\bin\git\usr\share\vim\vim74;C:\doubleweb-env\bin\cmder\;
+
+Yarn version: 
+  0.19.1
+
+Node version: 
+  6.9.5
+
+Platform: 
+  win32 ia32
+
+npm manifest: 
+  {
+    "private": true,
+    "engines": {
+      "node": ">=4"
+    },
+    "devDependencies": {
+      "babel-core": "^6.4.0",
+      "babel-preset-es2015": "^6.3.13",
+      "babel-register": "^6.5.2",
+      "browser-sync": "^2.2.1",
+      "del": "^2.2.0",
+      "gulp": "^3.9.0",
+      "gulp-autoprefixer": "^3.0.1",
+      "gulp-babel": "^6.1.1",
+      "gulp-cache": "^0.4.2",
+      "gulp-cssnano": "^2.0.0",
+      "gulp-eslint": "^3.0.0",
+      "gulp-filter": "^4.0.0",
+      "gulp-htmlmin": "^3.0.0",
+      "gulp-if": "^2.0.2",
+      "gulp-imagemin": "^3.0.1",
+      "gulp-load-plugins": "^1.2.4",
+      "gulp-plumber": "^1.0.1",
+      "gulp-sass": "^3.0.0",
+      "gulp-size": "^2.1.0",
+      "gulp-sourcemaps": "^2.2.0",
+      "gulp-uglify": "^2.0.0",
+      "gulp-useref": "^3.0.0",
+      "main-bower-files": "^2.5.0",
+      "run-sequence": "^1.2.2",
+      "wiredep": "^4.0.0"
+    },
+    "eslintConfig": {
+      "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+      },
+      "rules": {
+        "quotes": [
+          2,
+          "single"
+        ]
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\chocs\Desktop\mateus\node_modules\node-sass\vendor\win32-ia32-48\binding.node'
+      at Error (native)
