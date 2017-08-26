@@ -23,7 +23,7 @@
     <!-- endbuild -->
 
   </head>
-  <body>
+  <body class="page-orcamento">
     <h1 class="hide">Rodagro Transporte de Rural</h1>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -44,11 +44,11 @@
           </div>
           <div class="col-lg-8">
             <nav class="menu-topo">
-                <a href="index.html">home</a>
+                <a href="index.html" >início</a>
                 <a href="quem-somos.html">quem somos</a>
-                <a href="servicos.html">servicos</a>
-                <a href="orcamento.html">orçamento</a>
-                <a href="contato.html">contato</a>
+                <a href="servicos.html">serviços</a>
+                <a href="contato.html" class="actv" >contato</a>
+                <a href="orcamento.html" class="destaque">orçamento</a>
             </nav>
           </div>
 
@@ -58,15 +58,37 @@
     <section class="orcamento rowspace">
       <div class="container">
         <h2>Peça um Orçamento</h2>
-        <p>Solicite o seu orçamento preenchendo os campos do formulário abaixo e aguarde. Responderemos sua solicitação o mais breve possível.</p>
+        <p>
+          Solicite o seu orçamento, preenchendo os campos do formulário abaixo e aguarde. <br>
+          Responderemos a sua solicitação o mais breve possível.
+        </p>
         <form action="post-orcamento" method="POST" name="formOrcamento">
-          <input type="text" name="nome" placeholder="Nome Completo">
-          <input type="text" name="telefone" placeholder="Telefone">
-          <input type="email" name="email" placeholder="E-mail">
-          <input type="text" name="empresa" placeholder="Empresa">
-          <input type="text" name="servico" placeholder="Produto ou Servico">
-          <textarea name="mensagem" style="resize: none;" rows="5" placeholder="Digite sua mensagem"></textarea>
-          <input type="submit" class="btn" value="Pedir Orçamento">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <input type="text" name="nome" placeholder="Nome Completo">
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <input type="text" name="telefone" placeholder="Telefone">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <input type="email" name="email" placeholder="E-mail">
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <input type="email" name="email" placeholder="E-mail">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea name="mensagem" style="resize: none;" rows="5" placeholder="Digite sua mensagem"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn" value="Pedir Orçamento">
+          </div>
         </form>
       </div>
     </section>
@@ -74,8 +96,13 @@
       <div class="container">
         <div class="col-md-4 col-xs-12">
           <img src="images/logo-footer.png" alt="" class="logo-footer">
-          <br>
-          <p>Estrada Major Mauricio Souza Carpes, s/n. <br> Montenegro/RS - CEP 95780-970</p>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <p>
+            Rua Pirapó, 1400 - Canoas/RS, Brasil
+            <br>
+            CEP 92410-240
+          </p>
         </div>
         <div class="col-md-4 col-xs-12">
           <ul class="contato-lista">
@@ -85,17 +112,26 @@
           </ul>
         </div>
         <div class="col-md-4 col-xs-12">
-          <ul class="social-media">
-            <li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="javascript:;"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
+
         </div>
       </div>
     </footer>
     <div class="assinatura">
-      <p>Rodagro Transportes e Logística LTDA © 2017 <br>Todos os direitos reservados.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <p>Rodagro Transportes e Logística LTDA © 2017 Todos os direitos reservados.</p>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <ul class="social-media">
+              <li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="javascript:;"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <nav class="menu">
         <ul class="clearfix">
