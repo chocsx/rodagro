@@ -44,16 +44,22 @@ p{
   float: right;
 }
 .rowspace{
-  margin-top: 2em;
+  margin: 2em 0;
+}
+.center{
+  display: block;
+  margin: 0 auto;
 }
 .menu-topo{
   list-style: none;
   transition: all .4s linear;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   flex-direction: row;
-
   justify-content: space-between;
+  @media (min-width: 1024px){
+    display: flex;
+  }
   &.open {
     padding: 0;
     display: flex;
@@ -96,37 +102,44 @@ p{
     background-position: center center;
     height: 305px;
     @media (min-width: 768px){
-      height: 500px;
+      height: 750px;
     }
     .content{
       background-color: rgba(253,185,19,.8);
-      max-width: 455px;
-      left: 60%;
       display: flex;
+      @media (min-width: 1024px){
+        left: 60%;
+        max-width: 455px;
+      }
       p{
-        margin: 120px 30px;
-        font-size: 45px;
         color: #FFF;
+        font-size: 3rem;
+        font-weight: bold;
         max-width: 320px;
         text-transform: uppercase;
-        font-weight: bold;
         text-align: left;
+        align-self: center;
+        @media (min-width: 768px){
+          margin: 120px 30px;
+          font-size: 45px;
+        }
       }
     }
   }
 }
 .bemvindo{
-  padding: 60px 0 0 ;
+  @media (min-width: 1024px){
+    padding: 60px 0 0 ;
+  }
   p{
     padding: 30px;
   }
 }
-.center{
-  display: block;
-  margin: 0 auto;
-}
+
 .servicos{
-  padding: 60px 0;
+  @media (min-width: 1024px){
+    padding: 60px 0 0 ;
+  }
   ul{
     margin: 0;
     padding: 0;
@@ -134,14 +147,12 @@ p{
     li{
       margin: 15px 0;
       a{
-        background-position: center right;
+        background-position: right;
         background-repeat: no-repeat;
         background-color: $laranja;
         color: #FFF;
         display: block;
         height: 80px;
-
-
         h3{
           font-size: 16px;
           text-transform: uppercase;
@@ -168,12 +179,14 @@ p{
     }
   }
 }
+
 .orcamento{
   h2{
     padding: 1em;
   }
   .contato-lista{
     list-style: none;
+
     i{
       color: #fcb813;
     }
@@ -184,6 +197,7 @@ p{
     input, textarea{
       display: block;
       width: 100%;
+      margin-bottom: 10px;
       padding: 5px 10px;
       border: 1px solid #d8dade;
     }
@@ -210,8 +224,16 @@ footer{
     display: block;
     margin: 0 auto;
   }
+  p{
+    @media (max-width: 468px){
+      margin-top: 20px;
+    }
 
+  }
   .contato-lista{
+    @media (max-width: 468px){
+      margin-top: 20px;
+    }
     i{
       color: #3a3a3b;
     }
@@ -274,7 +296,9 @@ footer{
     }
     li {
       border-right: 1px solid #000;
-      padding: 10px 0;
+      @media (min-width: 1024px){
+        padding: 10px 0;
+      }
       @media (max-width: 768px){
         -webkit-box-flex: 1;
         -ms-flex: 1 1 33.33333%;
@@ -293,5 +317,65 @@ footer{
 .page-orcamento .orcamento{
   @media (min-width: 1024px){
     padding: 120px;
+  }
+}
+
+
+.outros-servicos{
+  padding: 60px 0 ;
+  @media (min-width: 1024px){
+    margin-bottom: 100px;
+  }
+  ul{
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    @media (max-width: 768px){
+      flex-direction: column;
+    }
+    li{
+      @media (min-width: 1024px){
+        width: 360px;
+      }
+      @media (max-width: 768px){
+        margin: 30px auto;
+      }
+      a{
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: #FFF;
+        height: 160px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0 0;
+      }
+      h3{
+        background-color: $laranja;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 24px;
+        padding: 15px 20px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.servico-interna{
+  padding: 60px 0;
+  h2{
+    margin-bottom: 30px;
+  }
+  @media (max-width: 768px){
+    padding: 30px 0;
+  }
+  img{
+    margin: 60px auto;
   }
 }

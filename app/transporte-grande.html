@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quem Somos - Rodagro Transporte de Rural</title>
+    <title>Rodagro Transporte de Rural</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -44,9 +44,9 @@
           </div>
           <div class="col-lg-8">
             <nav class="menu-topo">
-                <a href="index.html" >início</a>
-                <a href="quem-somos.html" class="actv">quem somos</a>
-                <!-- <a href="servicos.html">serviços</a> -->
+                <a href="index.html">início</a>
+                <a href="quem-somos.html">quem somos</a>
+                <a href="servicos.html" class="actv">serviços</a>
                 <a href="contato.html">contato</a>
                 <a href="orcamento.html" class="destaque">orçamento</a>
             </nav>
@@ -55,33 +55,84 @@
         </div>
       </div>
     </header>
-    <section class="orcamento rowspace">
+
+    <section class="servico-interna">
       <div class="container">
-        <h2>Quem Somos</h2>
+        <h2>transporte de máquinas de grande porte</h2>
         <p>
-            A Rodagro iniciou suas atividades há mais de uma década. Na sua origem, a empresa realizava o transporte de cargas líquidas. Com o passar do tempo, seu fundador - que também é um empreendedor do agronegócio - vislumbrou a grande possibilidade de ampliar seus negócios, investindo fortemente na especialização de transportes de cargas  especiais envolvendo o ramo agrícola, florestal, industrial e construção civil.
-            Para isso, a empresa passou a desenvolver  projetos para a criação de equipamentos  específicos para o transporte de máquinas e implementos agrícolas, dando retorno para a Rodagro e todos os seus clientes.
-            A empresa investiu também no capital humano, onde conta com profissionais altamente capacitados e experientes para atender as demandas de seus clientes.
+        Com 20,5 metros de extensão, 3,2 metros de largura (alargadores para 3,6 metros) e capacidade de carga para até 45 toneladas, nossas pranchas de 4 eixos são utilizadas no transporte de máquinas de grande porte. <br>
+        Com altura reduzida, assoalho plano e estrutura extremamente reforçada, esse tipo de prancha oferece maior garantia de segurança à sua carga.
         </p>
-        <h2>Área de Atuação</h2>
+        <img src="./images/caminhao-grande.png" alt="" class="center img-responsive">
         <p>
-          Temos logística de transporte nacional e internacional, cada vez mais presente na América Latina.
+          Dada sua capacidade, pode-se compor carregamentos de:
+pulverizadores, tratores de grande porte, tratores de esteira, duas colheitadeiras de grande porte juntas, etc.
         </p>
-        <img src="./images/mapa-america.png" alt="" class="center img-responsive">
-        <h2>Trabalhe Conosco</h2>
+      </div>
+    </section>
+    <section class="orcamento">
+      <div class="container">
+        <h2>Peça um Orçamento</h2>
         <p>
-          Preencha o formulário, anexando o seu currículo e venha trabalhar conosco.
+          Solicite o seu orçamento, preenchendo os campos do formulário abaixo e aguarde <br>
+
           Responderemos a sua solicitação o mais breve possível.
         </p>
-        <form action="post-trabalhe" method="POST" name="formTrabalhe">
-          <input type="text" name="nome" placeholder="Nome Completo">
-          <input type="text" name="telefone" placeholder="Telefone">
-          <input type="email" name="email" placeholder="E-mail">
-          <h3>anexe seu currículo</h3>
-          <input type="file" name="arquivo" id="filefield" class="arquivo">
-          <input type="submit" class="btn" value="Enviar">
+        <form action="post-orcamento" method="POST" name="formOrcamento">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <input type="text" name="nome" placeholder="Nome Completo">
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <input type="text" name="telefone" placeholder="Telefone">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <input type="email" name="email" placeholder="E-mail">
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <input type="text" name="empresa" placeholder="Empresa">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea name="mensagem" style="resize: none;" rows="5" placeholder="Digite sua mensagem"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn" value="Pedir Orçamento">
+          </div>
         </form>
+      </div>
     </section>
+    <section class="outros-servicos">
+      <div class="container">
+        <h2>Outros Serviços</h2>
+        <ul>
+          <li>
+            <a href="transporte-medio.html">
+              <img src="./images/outro-medio-porte.jpg" alt="" class="img-responsive">
+              <h3>
+                  transporte de máquinas
+                  de médio porte
+              </h3>
+            </a>
+          </li>
+          <li>
+            <a href="transporte-especial.html">
+              <img src="./images/outro-especial.jpg" alt="" class="img-responsive">
+              <h3>Transportes Especiais</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
     <footer>
       <div class="container">
         <div class="col-md-4 col-xs-12">
