@@ -5,7 +5,9 @@ $cinza: #3b3b3c;
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
 // endbower
+@import "bower_components/slick-carousel/slick/slick-theme.scss";
 
 /* Space out content a bit */
 body {
@@ -13,6 +15,7 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   color: #808285;
+  overflow-x: hidden;
   @media (max-width: 768px){
     padding-bottom: 53px;
   }
@@ -32,10 +35,8 @@ h2{
   text-align: center;
 }
 p{
-
   text-align: center;
   margin: 0;
-
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
@@ -98,11 +99,15 @@ p{
   div{
     position: relative;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1920px 667px, cover;
     background-position: center center;
-    height: 305px;
-    @media (min-width: 768px){
-      height: 750px;
+    @media (min-width: 769px){
+      height: 667px;
+    }
+    @media (max-width: 768px){
+      background-size: cover;
+      background-position: 15%;
+      height: 300px;
     }
     .content{
       background-color: rgba(253,185,19,.8);
@@ -128,20 +133,22 @@ p{
   }
 }
 .bemvindo{
-  @media (min-width: 1024px){
-    padding: 60px 0 0 ;
+  @media (max-width: 768px){
+    margin: 30px 0;
+    padding-top: 20px;
   }
-  p{
-    padding: 30px;
+  @media (min-width: 1024px){
+    margin: 60px 0;
   }
 }
 
 .servicos{
   @media (min-width: 1024px){
-    padding: 60px 0 0 ;
+    // padding: 60px 0 0 ;
   }
   ul{
     margin: 0;
+    margin-top: 30px;
     padding: 0;
     list-style: none;
     li{
@@ -181,8 +188,16 @@ p{
 }
 
 .orcamento{
+  margin-top: 50px;
+  @media (max-width: 768px){
+    margin-top: 20px;
+  }
   h2{
-    padding: 1em;
+    margin: 0;
+    padding: 0;
+  }
+  p{
+    margin: 30px 0;
   }
   .contato-lista{
     list-style: none;
@@ -194,6 +209,11 @@ p{
   form{
     padding: 20px 0;
     color: #c3c5ca;
+    .form-group{
+      @media (max-width: 768px){
+        margin-bottom: 0;
+      }
+    }
     input, textarea{
       display: block;
       width: 100%;
@@ -214,12 +234,14 @@ p{
       padding: 10px 0;
       max-width: 220px;
       margin: 0 auto;
+      border-radius: 0;
+      outline: 0;
     }
   }
 }
 footer{
   background-color: $cinza-claro;
-  padding: 30px 0;
+  padding: 30px 0 15px;
   .logo-footer{
     display: block;
     margin: 0 auto;

@@ -4,7 +4,8 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
-    "css-hamburgers": "^0.9.1"
+    "css-hamburgers": "^0.9.1",
+    "slick-carousel": "^1.7.1"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -19,6 +20,7 @@
     "chai": "^4.1.0",
     "mocha": "^3.4.2",
     "css-hamburgers": "^0.9.1",
-    "font-awesome": "fontawesome#^4.7.0"
+    "font-awesome": "fontawesome#^4.7.0",
+    "slick-carousel": "^1.7.1"
   }
 }
