@@ -111,8 +111,9 @@ p{
     }
     .content{
       background-color: rgba(253,185,19,.8);
-      display: flex;
-      @media (min-width: 1024px){
+      display: none;
+      @media (min-width: 768px){
+        display: flex;
         left: 60%;
         max-width: 455px;
       }
