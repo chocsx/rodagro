@@ -1,3 +1,8 @@
+.page-servicos .outros-servicos{
+  @media(min-width: 768px){
+    margin: 200px 0 200px;
+  }
+}
 .outros-servicos{
   padding: 60px 0 ;
   @media (min-width: 1024px){

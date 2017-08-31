@@ -60,6 +60,9 @@ footer{
     font-size: 12px;
     text-align: left;
     margin-top: 10px;
+    @media (max-width:  768px){
+      text-align: center;
+    }
   }
 
   .social-media{
@@ -80,5 +83,12 @@ footer{
         color: $cinza;
       }
     }
+  }
+}
+
+.logo-footer{
+  @media (max-width: 768px){
+    display: block;
+    margin: 0 auto;
   }
 }
