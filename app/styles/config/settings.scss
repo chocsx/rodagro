@@ -1,0 +1,84 @@
+html, body{
+  overflow-x: hidden;
+}
+body {
+  background-color: #f6f6f6;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  color: #808285;
+  overflow-x: hidden;
+  @media (max-width: 768px){
+    padding-bottom: 40px;
+  }
+}
+ul{
+  list-style-type: none;
+}
+h1,h2,h3,h4{
+  margin: 0;
+  padding: 0;
+}
+h2{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3b3b3c;
+  text-align: center;
+}
+p{
+  text-align: center;
+  margin: 0;
+}
+
+
+footer{
+  background-color: $cinza-claro;
+  padding: 30px 0 15px;
+  p{
+    @media (max-width: 468px){
+      margin-top: 20px;
+    }
+
+  }
+  .contato-lista{
+    @media (max-width: 468px){
+      margin-top: 20px;
+    }
+    li{
+      margin-bottom: 5px;
+    }
+    i{
+      color: #3a3a3b;
+    }
+  }
+}
+.assinatura{
+  padding: 15px 0 15px;
+  background-color: $cinza;
+  color: #FFF;
+  p{
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .social-media{
+    padding: 0;
+    margin: 20px 0 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li{
+      a{
+        background-color: #f6f6f6;
+        display: block;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        padding: 5px;
+        color: $cinza;
+      }
+    }
+  }
+}

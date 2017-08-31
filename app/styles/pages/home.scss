@@ -1,0 +1,93 @@
+.bemvindo{
+  @media (max-width: 768px){
+    margin: 30px 0;
+    padding-top: 20px;
+  }
+  @media (min-width: 1024px){
+    margin: 60px 0;
+  }
+}
+
+.servicos{
+  @media (min-width: 1024px){
+    // padding: 60px 0 0 ;
+  }
+  ul{
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+    li{
+      margin: 15px 0;
+      a{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: #FFF;
+        display: block;
+        height: 120px;
+        max-width: 780px;
+        margin: 0 auto;
+        @media (max-width: 768px){
+          height: 80px;
+          background-position: 10%;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+.orcamento{
+  margin-top: 50px;
+  @media (max-width: 768px){
+    margin-top: 20px;
+  }
+  h2{
+    margin: 0;
+    padding: 0;
+  }
+  p{
+    margin: 30px 0 0;
+  }
+  .contato-lista{
+    list-style: none;
+
+    i{
+      color: #fcb813;
+    }
+  }
+  form{
+    padding: 20px 0;
+    color: #c3c5ca;
+    .form-group{
+      margin-bottom: 0;
+      .col-md-6{
+        padding: 0 5px 0 5px 0;
+      }
+    }
+    input, textarea{
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      border: 1px solid #d8dade;
+    }
+    h3{
+      color: #000;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .btn{
+      background-color: #fdb913;
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 10px 0;
+      max-width: 220px;
+      margin: 0 auto;
+      border-radius: 0;
+      outline: 0;
+    }
+  }
+}

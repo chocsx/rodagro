@@ -33,8 +33,8 @@
     <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-xs-8">
-            <img src="images/logo.png" alt="" class="img-responsive">
+          <div class="col-lg-5 col-xs-8">
+            <img src="images/logo-header.png" alt="" class="img-responsive">
           </div>
           <div class="col-xs-4 hidden-md hidden-lg">
             <div class="hamburger hamburger--collapse">
@@ -43,11 +43,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-7 pull-right">
             <nav class="menu-topo">
                 <a href="index.html" >início</a>
                 <a href="quem-somos.html" class="actv">quem somos</a>
-                <!-- <a href="servicos.html">serviços</a> -->
+                <a href="servicos.html">serviços</a>
                 <a href="contato.html">contato</a>
                 <a href="orcamento.html" class="destaque">orçamento</a>
             </nav>
@@ -56,7 +56,7 @@
         </div>
       </div>
     </header>
-    <section class="orcamento rowspace">
+    <section class="quem-somos">
       <div class="container">
         <h2>Quem Somos</h2>
         <p>
@@ -69,19 +69,24 @@
           Temos logística de transporte nacional e internacional, cada vez mais presente na América Latina.
         </p>
         <img src="./images/mapa-america.png" alt="" class="center img-responsive">
-        <h2>Trabalhe Conosco</h2>
-        <p>
-          Preencha o formulário, anexando o seu currículo e venha trabalhar conosco.
-          Responderemos a sua solicitação o mais breve possível.
-        </p>
-        <form action="post-trabalhe" method="POST" name="formTrabalhe">
-          <input type="text" name="nome" placeholder="Nome Completo">
-          <input type="text" name="telefone" placeholder="Telefone">
-          <input type="email" name="email" placeholder="E-mail">
-          <h3>anexe seu currículo</h3>
-          <input type="file" name="arquivo" id="filefield" class="arquivo">
-          <input type="submit" class="btn" value="Enviar">
-        </form>
+
+        <div class="trabalhe">
+          <h2>Trabalhe Conosco</h2>
+          <p class="max-">
+            Preencha o formulário, anexando o seu currículo e venha trabalhar conosco.
+            Responderemos a sua solicitação o mais breve possível.
+          </p>
+          <form action="post-trabalhe" method="POST" name="formTrabalhe" class="form-trabalhe">
+            <input type="text" name="nome" placeholder="Nome Completo">
+            <input type="text" name="telefone" placeholder="Telefone">
+            <input type="email" name="email" placeholder="E-mail">
+            <div class="file">
+              <span>Anexar Currículo</span>
+              <input type="file" name="arquivo" id="filefield" class="arquivo" value="text">
+            </div>
+            <input type="submit" class="enviar" value="Enviar">
+          </form>
+        </div>
     </section>
     <footer>
       <div class="container">

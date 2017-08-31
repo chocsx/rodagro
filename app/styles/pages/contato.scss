@@ -1,0 +1,50 @@
+section.contato{
+    h2{
+        margin: 15px 0;
+    }
+    h2, p{
+        text-align: left;
+    }
+    form{
+        input{
+            display: block;
+            height: 40px;
+            max-width: 370px;
+            margin: 0 auto 10px;
+            padding: 0 15px;
+            width: 100%;
+        }
+        textarea{
+            max-width: 370px;
+            margin: 0 auto 10px;
+            padding: 10px 15px;
+            width: 100%;
+            resize: none;
+        }
+        .enviar{
+            border: 0;
+            margin: 0;
+            background-color: #fdb913;
+            color: #FFF;
+            font-weight: bold;
+            max-width: 150px;
+            width: 100%;
+        }
+    }
+    .contato-lista{
+        margin: 0;
+        margin-bottom: 60px;
+        padding: 0;
+        li{
+            margin-bottom: 5px;
+            text-align: left;
+            i{
+                color: #fdb913;
+                margin-right: 10px;
+            }
+        }
+    }
+    p{
+        margin-bottom: 15px;
+    }
+}
