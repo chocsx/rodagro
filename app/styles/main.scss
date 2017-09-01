@@ -5,6 +5,10 @@ $cinza: #3b3b3c;
 
 $hamburger-padding-x                       : 7px ;
 $hamburger-padding-y                       : 7px ;
+
+$container-lg: 960px;
+$container-md: 840px;
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";

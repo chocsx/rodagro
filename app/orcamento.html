@@ -45,11 +45,20 @@
           </div>
           <div class="col-lg-7 col-xs-12 pull-right">
             <nav class="menu-topo">
-                <a href="index.html">início</a>
-                <a href="quem-somos.html">quem somos</a>
-                <a href="servicos.html">serviços</a>
-                <a href="contato.html">contato</a>
-                <a href="orcamento.html" class="destaque" class="actv">orçamento</a>
+              <ul>
+                <li><a href="index.html">início</a></li>
+                <li><a href="quem-somos.html">quem somos</a></li>
+                <li class="submenu">
+                  <a href="javascript:;">serviços <i class="fa fa-arrow-down"></i></a>
+                  <ul class="lista-servicos clearfix">
+                    <li><a href="#">Transporte de Maquinas de Grande Porte</a></li>
+                    <li><a href="#">Transporte de Maquinas de Médio Porte</a></li>
+                    <li><a href="#">Transporte Especial</a></li>
+                  </ul>
+                </li>
+                <li><a href="contato.html">contato</a></li>
+                <li><a href="orcamento.html" class="destaque" class="actv">orçamento</a></li>
+              </ul>
             </nav>
           </div>
 
@@ -60,8 +69,7 @@
       <div class="container">
         <h2>Peça um Orçamento</h2>
         <p>
-          Solicite o seu orçamento, preenchendo os campos do formulário abaixo e aguarde <br>
-
+          Solicite o seu orçamento, preenchendo os campos do formulário abaixo e aguarde.
           Responderemos a sua solicitação o mais breve possível.
         </p>
         <form action="post-orcamento" method="POST" name="formOrcamento" class="col-md-8 col-md-push-2">
@@ -86,7 +94,7 @@
             </div>
           </div>
           <div class="form-group">
-            <textarea name="mensagem" style="resize: none;" rows="5" placeholder="Digite sua mensagem"></textarea>
+              <textarea name="mensagem" style="resize: none;" rows="5" placeholder="Digite sua mensagem"></textarea>
           </div>
           <div class="form-group">
             <input type="submit" class="btn" value="Pedir Orçamento">
