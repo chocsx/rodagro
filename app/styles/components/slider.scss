@@ -51,9 +51,9 @@
       background-position: 21%;
     }
     @media (max-width: 768px){
-      background-size: contain;
+      background-size: cover;
       background-position: center;
-      height: 180px;
+      height: 220px;
     }
   }
 }
