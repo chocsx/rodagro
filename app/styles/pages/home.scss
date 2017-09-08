@@ -99,16 +99,21 @@
     flex-direction: row;
     justify-content: space-around;
     li{
-
       @media(max-width: 768px){
         flex: 0 0 50%;
         margin-bottom: 20px;
+        img{
+          display: block;
+          margin: 0 auto;
+        }
       }
       h3{
         margin-top: 5px;
         font-size: 14px;
         color: #000;
         font-weight: bold;
+        text-align: center;
+        text-transform: capitalize;
       }
     }
   }
