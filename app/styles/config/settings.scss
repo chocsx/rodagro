@@ -38,7 +38,9 @@ footer{
     @media (max-width: 468px){
       margin-top: 20px;
     }
-
+  }
+  .vheight{
+    margin-top:  10px;
   }
   .contato-lista{
     @media (max-width: 468px){
@@ -59,7 +61,7 @@ footer{
   p{
     font-size: 12px;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 7px;
     @media (max-width:  768px){
       text-align: center;
     }
@@ -67,7 +69,7 @@ footer{
 
   .social-media{
     padding: 0;
-    margin: 20px 0 0 ;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

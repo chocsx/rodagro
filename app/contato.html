@@ -33,7 +33,7 @@
       <header class="header">
         <div class="container">
           <div class="row">
-            <div class="col-lg-5 col-xs-8">
+            <div class="col-lg-3 col-xs-8">
               <img src="images/logo-header.png" alt="" class="img-responsive">
             </div>
             <div class="col-xs-4 hidden-md hidden-lg">
@@ -43,13 +43,23 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-7 col-xs-12 pull-right">
+
+            <div class="col-lg-9 col-xs-12 pull-right">
               <nav class="menu-topo">
-                  <a href="index.html" >início</a>
-                  <a href="quem-somos.html">quem somos</a>
-                  <a href="servicos.html">serviços</a>
-                  <a href="contato.html" class="actv">contato</a>
-                  <a href="orcamento.html" class="destaque">orçamento</a>
+                <ul>
+                  <li><a href="index.html">início</a></li>
+                  <li><a href="quem-somos.html">quem somos</a></li>
+                  <li class="submenu">
+                    <a href="javascript:;">serviços</a>
+                    <ul class="lista-servicos clearfix">
+                      <li><a href="transporte-grande.html">Transporte de Maquinas de Grande Porte</a></li>
+                      <li><a href="transporte-medio.html">Transporte de Maquinas de Médio Porte</a></li>
+                      <li><a href="transporte-especial.html">Transporte Especial</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contato.html">contato</a></li>
+                  <li><a href="orcamento.html" class="destaque" class="actv">orçamento</a></li>
+                </ul>
               </nav>
             </div>
 
@@ -64,7 +74,7 @@
               <ul class="contato-lista">
                 <li><i class="fa fa-phone"></i>+55 51 4042-3003</li>
                 <li><i class="fa fa-whatsapp"></i>+55 51 99193-7389</li>
-                <li><i class="fa fa-envelope"></i>contato@rodagro.com.br</li>
+                <li><i class="fa fa-envelope"></i>comercial@transrodagro.com.br</li>
               </ul>
               <h2>Envie Sua Mensagem</h2>
               <form action="post-contato" method="POST" name="formContato">
@@ -90,53 +100,51 @@
               <p>
                 R. Pirapó, 1400 - Igara, Canoas - RS
               </p>
-              <a href="https://www.google.com.br/maps/place/R.+Pirap%C3%B3,+1400+-+Igara,+Canoas+-+RS/@-29.8904798,-51.1733981,17z/data=!4m5!3m4!1s0x95196ff150c49249:0xc7281384b3f79a39!8m2!3d-29.8901915!4d-51.1736878?hl=pt-BR" target="blank">
-                <img src="./images/mapa.png" alt="" class="img-responsive">
-              </a>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3459.0909522412994!2d-51.1733981!3d-29.8904798!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95196ff150c49249%3A0xc7281384b3f79a39!2sR.+Pirap%C3%B3%2C+1400+-+Igara%2C+Canoas+-+RS!5e0!3m2!1spt-BR!2sbr!4v1504295937618" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </section>
       <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-xs-12">
-              <img src="images/logo-footer.png" alt="" class="logo-footer">
-            </div>
-            <div class="col-md-6 col-xs-12">
-              <p>
-                Rua Pirapó, 1400 - Canoas/RS, Brasil
-                <br>
-                CEP 92410-240
-              </p>
-            </div>
-            <div class="col-md-3 col-xs-12">
-              <ul class="contato-lista">
-                <li><i class="fa fa-phone"></i> 51 4042-3003</li>
-                <li><i class="fa fa-whatsapp"></i> 51 99193-7389</li>
-                <li><i class="fa fa-envelope"></i> contato@rodagro.com.br</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
-     <div class="assinatura">
       <div class="container">
         <div class="row">
-          <div class="col-md-10 col-xs-12">
-            <p>Rodagro Transportes e Logística LTDA © 2017 Todos os direitos reservados.</p>
+          <div class="col-md-3 col-xs-12">
+            <img src="images/logo-footer.png" alt="" class="logo-footer">
           </div>
-          <div class="col-md-2 col-xs-8 col-xs-push-2">
-            <ul class="social-media">
-              <li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
-              <li><a href="javascript:;"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+          <div class="col-md-5 col-xs-12">
+            <p class="vheight">
+              Rua Pirapó, 1400 - Canoas/RS, Brasil
+              <br>
+              CEP 92410-240
+            </p>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <ul class="contato-lista">
+              <li><i class="fa fa-phone"></i> 51 4042-3003</li>
+              <li><i class="fa fa-whatsapp"></i> 51 99193-7389</li>
+              <li><i class="fa fa-envelope"></i> comercial@transrodagro.com.br</li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
+      <div class="assinatura">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-xs-12">
+              <p>Rodagro Transportes e Logística LTDA © 2017 Todos os direitos reservados.</p>
+            </div>
+            <div class="col-md-3 col-xs-8 col-xs-push-2 col-md-push-0">
+              <ul class="social-media">
+                <li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="javascript:;"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <nav class="menu">
         <ul class="clearfix">
           <li><a href="tel:+"><i class="fa fa-phone fa-2x"></i></a></li>

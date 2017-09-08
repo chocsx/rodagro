@@ -15,11 +15,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     @media (max-width: 768px){
       flex-direction: column;
     }
     li{
+      margin: 0 30px;
       @media (min-width: 1024px){
         width: 360px;
       }

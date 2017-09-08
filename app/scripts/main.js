@@ -3,7 +3,7 @@ $(document).ready(function(){
       $('nav.menu-topo ul').toggleClass('open');
       $('.hamburger').toggleClass('is-active');
   });
-  $('.slider').slick({
+  $('.slider, .slider-mobile').slick({
     dots: true
   });
 })

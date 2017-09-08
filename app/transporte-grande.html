@@ -33,7 +33,7 @@
     <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 col-xs-8">
+          <div class="col-lg-3 col-xs-8">
             <img src="images/logo-header.png" alt="" class="img-responsive">
           </div>
           <div class="col-xs-4 hidden-md hidden-lg">
@@ -43,13 +43,23 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-7 col-xs-12 pull-right">
+
+          <div class="col-lg-9 col-xs-12 pull-right">
             <nav class="menu-topo">
-                <a href="index.html" class="actv">início</a>
-                <a href="quem-somos.html">quem somos</a>
-                <a href="servicos.html">serviços</a>
-                <a href="contato.html">contato</a>
-                <a href="orcamento.html" class="destaque">orçamento</a>
+              <ul>
+                <li><a href="index.html">início</a></li>
+                <li><a href="quem-somos.html">quem somos</a></li>
+                <li class="submenu">
+                  <a href="javascript:;">serviços</a>
+                  <ul class="lista-servicos clearfix">
+                    <li><a href="transporte-grande.html">Transporte de Maquinas de Grande Porte</a></li>
+                    <li><a href="transporte-medio.html">Transporte de Maquinas de Médio Porte</a></li>
+                    <li><a href="transporte-especial.html">Transporte Especial</a></li>
+                  </ul>
+                </li>
+                <li><a href="contato.html">contato</a></li>
+                <li><a href="orcamento.html" class="destaque" class="actv">orçamento</a></li>
+              </ul>
             </nav>
           </div>
 
@@ -79,7 +89,7 @@ pulverizadores, tratores de grande porte, tratores de esteira, duas colheitadeir
 
           Responderemos a sua solicitação o mais breve possível.
         </p>
-        <form action="post-orcamento" method="POST" name="formOrcamento">
+        <form action="post-orcamento" method="POST" name="formOrcamento" class="col-md-8 col-md-push-2">
           <div class="form-group">
             <div class="row">
               <div class="col-md-6 col-xs-12">
@@ -101,7 +111,7 @@ pulverizadores, tratores de grande porte, tratores de esteira, duas colheitadeir
             </div>
           </div>
           <div class="form-group">
-            <textarea name="mensagem" style="resize: none;" rows="5" placeholder="Digite sua mensagem"></textarea>
+              <textarea name="mensagem" style="resize: none;" rows="5" placeholder="Digite sua mensagem"></textarea>
           </div>
           <div class="form-group">
             <input type="submit" class="btn" value="Pedir Orçamento">
@@ -137,18 +147,18 @@ pulverizadores, tratores de grande porte, tratores de esteira, duas colheitadeir
           <div class="col-md-3 col-xs-12">
             <img src="images/logo-footer.png" alt="" class="logo-footer">
           </div>
-          <div class="col-md-6 col-xs-12">
-            <p>
+          <div class="col-md-5 col-xs-12">
+            <p class="vheight">
               Rua Pirapó, 1400 - Canoas/RS, Brasil
               <br>
               CEP 92410-240
             </p>
           </div>
-          <div class="col-md-3 col-xs-12">
+          <div class="col-md-4 col-xs-12">
             <ul class="contato-lista">
               <li><i class="fa fa-phone"></i> 51 4042-3003</li>
               <li><i class="fa fa-whatsapp"></i> 51 99193-7389</li>
-              <li><i class="fa fa-envelope"></i> contato@rodagro.com.br</li>
+              <li><i class="fa fa-envelope"></i> comercial@transrodagro.com.br</li>
             </ul>
           </div>
         </div>
@@ -157,10 +167,10 @@ pulverizadores, tratores de grande porte, tratores de esteira, duas colheitadeir
     <div class="assinatura">
       <div class="container">
         <div class="row">
-          <div class="col-md-10 col-xs-12">
+          <div class="col-md-9 col-xs-12">
             <p>Rodagro Transportes e Logística LTDA © 2017 Todos os direitos reservados.</p>
           </div>
-          <div class="col-md-2 col-xs-8 col-xs-push-2 col-lg-push-0">
+          <div class="col-md-3 col-xs-8 col-xs-push-2 col-md-push-0">
             <ul class="social-media">
               <li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
               <li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>

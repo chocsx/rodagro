@@ -21,6 +21,5 @@
     "mocha": "^3.4.2",
     "css-hamburgers": "^0.9.1",
     "font-awesome": "fontawesome#^4.7.0",
-    "slick-carousel": "^1.7.1"
   }
 }
