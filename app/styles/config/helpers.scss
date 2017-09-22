@@ -10,5 +10,16 @@
   margin: 0 auto;
 }
 .logo-footer{
+    max-width: 200px;
     margin-top: 10px;
+    @media(max-width: 768px){
+        margin-bottom: 15px;
+    }
+}
+.pright{
+    padding-right: 7px;
+}
+.pleft{
+    padding-left: 7px;
+
 }

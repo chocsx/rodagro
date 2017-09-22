@@ -40,7 +40,9 @@ footer{
     }
   }
   .vheight{
-    margin-top:  10px;
+    @media(min-width: 769px){
+      margin-top:  17px;
+    }
   }
   .contato-lista{
     @media (max-width: 468px){
@@ -73,6 +75,9 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width: 768px){
+      margin-top: 20px;
+    }
     li{
       a{
         background-color: #f6f6f6;

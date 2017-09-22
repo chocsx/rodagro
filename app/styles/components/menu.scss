@@ -48,11 +48,11 @@
           background-color: #ccc;
           display: none;
           margin: 0;
-          padding: 0;
+          padding: 0 15px;
           position: absolute;
-          top: 35px;
-          left: -20px;
-          width: 150px;
+          top: 45px;
+          left: -70px;
+          width: 270px;
           z-index: 3;
           @media (max-width: 768px){
             position: relative;
@@ -102,7 +102,7 @@
   background-color: #e3e4e8;
   border-bottom: 1px solid #e5e5e5;
   margin: 0;
-  padding: 10px 0;
+  padding: 15px 0;
   .logo-header{
     max-width: 200px;
   }
